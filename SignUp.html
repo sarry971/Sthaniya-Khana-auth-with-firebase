@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6b17afe989.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <title>Sthaniya Khana</title>
+</head>
+
+<body>
+    <div class="LoginScreen">
+        <div class="loginImg">
+            <img src="home.jpg">
+        </div>
+        <div class="loginForm">
+            <div class="signInPart">
+                <div class="logo">Sthaniya Khana</div>
+                <div class="inputs">
+                    <input type="text" id="SignUpEmail" class="Email" placeholder="Email or Username">
+                    <input type="password" id="SignUpPassword" placeholder="Password">
+                    <center><button class="LoginBtn" onclick="SignUp()">Sign Up</button></center>
+                    <span>
+                        <p> --OR-- </p>
+                    </span>
+                </div>
+                <div class="loginFormFooter">
+                    <p><i class='fab fa-facebook-square'></i> Login with Facebook</p>
+                    <p>Forgot Password?</p>
+                </div>
+            </div>
+            <div class="signOutPart">
+                <span>Don't have an account? &nbsp;</span>
+                <button class="SignUpBtn"><a href="/index.html">Sign In</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/firebase-config.js"></script>
+<script src="js/firebase-auth.js"></script>
+
+
+</html>
